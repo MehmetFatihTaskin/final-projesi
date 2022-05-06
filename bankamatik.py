@@ -2,4 +2,4 @@ uwuwuwud
 asgfaksujf
 oldumu
 oldu 
-isim değiştirme
+isim neden kırmızı oluyor
