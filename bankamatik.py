@@ -1,4 +1,5 @@
 import _tkinter as tk
+from glob import glob
 from tkinter import *
 
 fatihhesap = {
@@ -16,3 +17,24 @@ tahahesap = {
     "ekhesap" : "2000"
 
 }
+
+pencere = tk.Tk()
+pencere.geometry("800x600")
+def sign_in() :
+    global fatihhesap
+    global girilenTutar 
+
+    hesapNo=entry.get()
+    if hesapNo == "12345678" :
+        girilenTutar=0
+        def tutarfonk():
+            global girilenTutar
+            global fatihhesap
+            tutar=entry1.get()
+            girilenTutar=int(tutar)
+            
+
+
+
+
+
