@@ -38,7 +38,9 @@ def sign_in() :
                 fatihhesap["bakiye"]-=girilenTutar
                 yazi.config(text=f'hesapta {fatihhesap["bakiye"]} tl kaldı. ek hesapta {fatihhesap["ekHesap"]} tl kaldı.')
 
-print("oldumu")
+
+
+
 
 
 
