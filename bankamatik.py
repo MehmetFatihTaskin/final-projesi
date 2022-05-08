@@ -32,7 +32,11 @@ def sign_in() :
             global fatihhesap
             tutar=entry1.get()
             girilenTutar=int(tutar)
-            
+
+            if girilenTutar <= fatihhesap["bakiye"]:
+                yazi5.config(text="")
+                fatihhesap["bakiye"]-=girilenTutar
+                yazi.config(text=f'hesapta {fatihhesap["bakiye"]} tl kaldı. ek hesapta {fatihhesap["ekHesap"]} tl kaldı.')
 
 
 
