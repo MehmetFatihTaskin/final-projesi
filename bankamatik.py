@@ -1,4 +1,5 @@
 import _tkinter as tk
+from cgitb import text
 from glob import glob
 from tkinter import *
 
@@ -37,8 +38,5 @@ def sign_in() :
                 yazi5.config(text="")
                 fatihhesap["bakiye"]-=girilenTutar
                 yazi.config(text=f'hesapta {fatihhesap["bakiye"]} tl kaldı. ek hesapta {fatihhesap["ekHesap"]} tl kaldı.')
-                print(imdatimdat)
-
-                print(taha)
-                
-
+            else:
+                yazi5.config(text=f'Hesapta {girilenTutar} tl bulunmuyor. Bu parayı çekemezsiniz!',fg="red",font=("Vertana",14))
