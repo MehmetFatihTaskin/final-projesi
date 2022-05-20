@@ -37,4 +37,6 @@ def sign_in() :
                 yazi5.config(text="")
                 fatihhesap["bakiye"]-=girilenTutar
                 yazi.config(text=f'hesapta {fatihhesap["bakiye"]} tl kaldı. ek hesapta {fatihhesap["ekHesap"]} tl kaldı.')
+                print(imdatimdat)
+                
 
