@@ -1,6 +1,4 @@
 import _tkinter as tk
-from cgitb import text
-from glob import glob
 from tkinter import *
 
 fatihhesap = {
@@ -40,3 +38,11 @@ def sign_in() :
                 yazi.config(text=f'hesapta {fatihhesap["bakiye"]} tl kaldı. ek hesapta {fatihhesap["ekHesap"]} tl kaldı.')
             else:
                 yazi5.config(text=f'Hesapta {girilenTutar} tl bulunmuyor. Bu parayı çekemezsiniz!',fg="red",font=("Vertana",14))
+        def paraYatir():
+            global girilenTutar
+            global fatihhesap
+            tutar=entry1.get()        
+            girilenTutar=int(tutar)
+            yazi5.config(text="")
+            fatihhesap["bakiye"] = girilenTutar+fatihhesap["bakiye"]
+            yazi.config(text=f'Hesapta olan para: {fatihhesap["bakiye"]} / Ek hesapta olan para: {fatihhesap["ekHesap"]} ')        
