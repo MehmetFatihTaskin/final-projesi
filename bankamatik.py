@@ -1,8 +1,4 @@
 import _tkinter as tk
-<<<<<<< Updated upstream
-=======
-from glob import glob
->>>>>>> Stashed changes
 from tkinter import *
 
 fatihhesap = {
@@ -48,7 +44,6 @@ def sign_in() :
                 yazi5.config(text="")
                 fatihhesap["bakiye"]-=girilenTutar
                 yazi.config(text=f'hesapta {fatihhesap["bakiye"]} tl kaldı. ek hesapta {fatihhesap["ekHesap"]} tl kaldı.')
-<<<<<<< Updated upstream
             else:
                 yazi5.config(text=f'Hesapta {girilenTutar} tl bulunmuyor. Bu parayı çekemezsiniz!',fg="red",font=("Vertana",14))
         def paraYatir():
@@ -59,6 +54,7 @@ def sign_in() :
             yazi5.config(text="")
             fatihhesap["bakiye"] = girilenTutar+fatihhesap["bakiye"]
             yazi.config(text=f'Hesapta olan para: {fatihhesap["bakiye"]} / Ek hesapta olan para: {fatihhesap["ekHesap"]} ')        
-=======
-7
->>>>>>> Stashed changes
+        pencere.title("BANKAMATİK")
+        pencere.geometry("800x600")
+        yazi=tk.Label(pencere)
+        yazi.config(text=f'Hesapta olan para: {fatihhesap["bakiye"]} / Ek hesapta olan para: {fatihhesap["ekHesap"]}',fg="green",font=("Vertana",14))    
