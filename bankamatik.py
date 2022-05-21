@@ -16,13 +16,6 @@ tahahesap = {
     "ekhesap" : "2000"
 
 }
-mustafahesap = {
-    "isim" : "Mustafa Paşaoğlu",
-    "hesapno" : "13579113",
-    "bakiye" : "700000",
-    "ekhesap" : "2000",
-
-}
 
 pencere = tk.Tk()
 pencere.geometry("800x600")
