@@ -124,3 +124,12 @@ def sign_in() :
         dugme.config(bg="black", fg="yellow",font=("Vertana",15))
         
         
+        dugme.pack()
+        dugme2 = tk.Button(text = "para yatır", width=40,height=5, command=paraYatir)
+        dugme2.config(bg="black", fg="yellow",font=("Vertana",15))
+        dugme2.pack()
+        
+        dugme3 = tk.Button(text = "ÇIKIŞ", width=38,height=5, command=pencere.quit)
+        dugme3.config(bg="green", fg="red",font=("Vertana",16))
+        dugme3.pack()
+        
