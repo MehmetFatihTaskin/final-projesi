@@ -98,7 +98,7 @@ def sign_in() :
 
             else:
                 yazi5.config(text=f'Hesapta {girilenTutar} tl bulunmuyor. Bu parayı çekemezsiniz!',fg="red",font=("Vertana",14))
-                
+
         def paraYatir():
             global girilenTutar
             global fatihHesap
@@ -107,4 +107,10 @@ def sign_in() :
             yazi5.config(text="")
             tahaHesap["bakiye"] = girilenTutar+tahaHesap["bakiye"]
             yazi.config(text=f'Hesapta olan para: {tahaHesap["bakiye"]} / Ek hesapta olan para: {tahaHesap["ekHesap"]} ')
+
+            
+        pencere.title("BANKAMATİK")
+        pencere.geometry("800x600")
+        yazi=tk.Label(pencere)
+        yazi.config(text=f'Hesapta olan para: {tahaHesap["bakiye"]} / Ek hesapta olan para: {tahaHesap["ekHesap"]}',fg="green",font=("Vertana",14))
 
