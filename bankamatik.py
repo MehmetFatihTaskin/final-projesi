@@ -118,3 +118,9 @@ def sign_in() :
         dugme=tk.Button(pencere)
         entry1=Entry(pencere)
         tutar=entry1.get()
+        
+        entry1.pack()
+        dugme.config(text="para çek", width=40,height=5,command=tutarfonk)
+        dugme.config(bg="black", fg="yellow",font=("Vertana",15))
+        
+        
