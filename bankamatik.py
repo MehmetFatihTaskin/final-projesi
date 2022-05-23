@@ -95,3 +95,6 @@ def sign_in() :
                 tahaHesap["ekHesap"] = tahaHesap["ekHesap"]-(girilenTutar-tahaHesap["bakiye"])
                 tahaHesap["bakiye"] = 0
                 yazi.config(text=f'hesapta {tahaHesap["bakiye"]} tl kaldı. ek hesapta {tahaHesap["ekHesap"]} tl kaldı.')
+
+            else:
+                yazi5.config(text=f'Hesapta {girilenTutar} tl bulunmuyor. Bu parayı çekemezsiniz!',fg="red",font=("Vertana",14))
