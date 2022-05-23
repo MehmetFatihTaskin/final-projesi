@@ -98,3 +98,13 @@ def sign_in() :
 
             else:
                 yazi5.config(text=f'Hesapta {girilenTutar} tl bulunmuyor. Bu parayı çekemezsiniz!',fg="red",font=("Vertana",14))
+                
+        def paraYatir():
+            global girilenTutar
+            global fatihHesap
+            tutar=entry1.get()
+            girilenTutar = int(tutar)
+            yazi5.config(text="")
+            tahaHesap["bakiye"] = girilenTutar+tahaHesap["bakiye"]
+            yazi.config(text=f'Hesapta olan para: {tahaHesap["bakiye"]} / Ek hesapta olan para: {tahaHesap["ekHesap"]} ')
+
