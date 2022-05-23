@@ -86,8 +86,15 @@ def sign_in() :
             global fatihHesap
             tutar=entry1.get()
             girilenTutar = int(tutar)
-            
+
             if girilenTutar <= tahaHesap["bakiye"]:
                 yazi5.config(text="")
                 tahaHesap["bakiye"]-=girilenTutar
                 yazi.config(text=f'hesapta {tahaHesap["bakiye"]} tl kaldı. ek hesapta {tahaHesap["ekHesap"]} tl kaldı.')
+
+            elif girilenTutar> tahaHesap["bakiye"] and girilenTutar<=tahaHesap["bakiye"]+tahaHesap["ekHesap"]:
+                yazi5.config(text="")
+                tahaHesap["ekHesap"] = tahaHesap["ekHesap"]-(girilenTutar-tahaHesap["bakiye"])
+                tahaHesap["bakiye"] = 0
+                yazi.config(text=f'hesapta {tahaHesap["bakiye"]} tl kaldı. ek hesapta {tahaHesap["ekHesap"]} tl kaldı.')
+       
