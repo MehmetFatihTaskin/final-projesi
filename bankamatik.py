@@ -76,3 +76,5 @@ def sign_in() :
         pencere.mainloop()
         entry.destroy()
         buton.destroy()
+    else:
+        print("yanlış giriş")
