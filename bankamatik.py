@@ -70,3 +70,6 @@ def sign_in() :
         yazi5=tk.Label(pencere)
         yazi5.config(text="")
         yazi5.pack()
+        hosgeldin=Label(pencere)
+        hosgeldin.config(text=f'Sayin {fatihHesap["isim"]} sisteme hoşgeldiniz',fg="green",font=("Vertana",12))
+        hosgeldin.place(x=195,y=550)
