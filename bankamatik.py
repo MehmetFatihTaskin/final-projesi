@@ -113,4 +113,8 @@ def sign_in() :
         pencere.geometry("800x600")
         yazi=tk.Label(pencere)
         yazi.config(text=f'Hesapta olan para: {tahaHesap["bakiye"]} / Ek hesapta olan para: {tahaHesap["ekHesap"]}',fg="green",font=("Vertana",14))
-
+        
+        yazi.pack()
+        dugme=tk.Button(pencere)
+        entry1=Entry(pencere)
+        tutar=entry1.get()
