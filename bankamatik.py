@@ -78,3 +78,11 @@ def sign_in() :
         buton.destroy()
     else:
         print("yanlış giriş")
+    hesapNo1=entry.get()
+    if hesapNo1=="87654321":
+        girilenTutar=0
+        def tutarfonk():
+            global girilenTutar
+            global fatihHesap
+            tutar=entry1.get()
+            girilenTutar = int(tutar)
