@@ -1,7 +1,7 @@
 import _tkinter as tk
 from tkinter import *
 
-fatihhesap = {
+fatihHesap = {
     "isim" : "Fatih Taskin",
     "hesapno": "12345678",
     "bakiye": "5000",
