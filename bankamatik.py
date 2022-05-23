@@ -67,3 +67,6 @@ def sign_in() :
         etiket=Label(pencere)
         etiket.config(text="BANKAMATİK SİSTEMLERİ",bg="green",fg="yellow",font=("Vertana",24))
         etiket.place(x=195,y=500)
+        yazi5=tk.Label(pencere)
+        yazi5.config(text="")
+        yazi5.pack()
