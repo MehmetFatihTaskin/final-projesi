@@ -73,3 +73,6 @@ def sign_in() :
         hosgeldin=Label(pencere)
         hosgeldin.config(text=f'Sayin {fatihHesap["isim"]} sisteme hoşgeldiniz',fg="green",font=("Vertana",12))
         hosgeldin.place(x=195,y=550)
+        pencere.mainloop()
+        entry.destroy()
+        buton.destroy()
