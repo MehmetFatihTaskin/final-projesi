@@ -9,7 +9,7 @@ fatihhesap = {
 
 }
 
-tahahesap = {
+tahaHesap = {
     "isim" : " Taha Bayrak",
     "hesapno" : "87654321",
     "bakiye" : "10000",
