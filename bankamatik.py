@@ -149,3 +149,11 @@ def sign_in() :
         entry.destroy()
         buton.destroy()
 
+    else:
+        pencere1 = Tk()
+        pencere1.geometry("400x200")
+        etiket=Label(pencere1)
+        etiket.config(text="HATALI ŞİFRE",bg="RED",font=("Vertana",24))
+        etiket.place(x=100,y=100)
+        mainloop()
+
