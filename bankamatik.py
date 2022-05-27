@@ -161,3 +161,12 @@ label=Label(pencere)
 label.config(text="Hesap nosunu giriniz",font=("Arial",20))
 
 label.place(x=250,y=180)
+
+entry=Entry(pencere)
+entry.place(x=255,y=225)
+
+buton=Button(pencere)
+buton.config(text="Giriş yap",bg="black",fg="white",command=sign_in)
+buton.place(x=289,y=250)
+
+mainloop()
