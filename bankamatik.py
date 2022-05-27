@@ -133,3 +133,6 @@ def sign_in() :
         dugme3.config(bg="green", fg="red",font=("Vertana",16))
         dugme3.pack()
         
+        etiket=Label(pencere)
+        etiket.config(text="BANKAMATİK SİSTEMLERİ",bg="green",fg="yellow",font=("Vertana",24))
+        etiket.place(x=195,y=500)
