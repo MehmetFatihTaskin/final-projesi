@@ -157,3 +157,7 @@ def sign_in() :
         etiket.place(x=100,y=100)
         mainloop()
 
+label=Label(pencere)
+label.config(text="Hesap nosunu giriniz",font=("Arial",20))
+
+label.place(x=250,y=180)
